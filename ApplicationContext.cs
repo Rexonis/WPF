@@ -14,7 +14,7 @@ namespace Registration
         public DbSet<Role> Roles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=127.0.0.1;port=3306;user=root;password=root;database=Berestov_register", new MySqlServerVersion(new Version(8, 0, 0)));
+            optionsBuilder.UseMySql("server=127.0.0.1;port=3306;user=root;password=root;database=register", new MySqlServerVersion(new Version(8, 0, 0)));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
